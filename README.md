@@ -1,3 +1,4 @@
+### Hi there 👋
 <p align="left">
   <a href="https://github.com/ktakada42/ktakada42/">
     <img src="https://komarev.com/ghpvc/?username=ktakada42" alt="ktakada42" />
@@ -8,7 +9,6 @@
   <a href="https://github.com/ktakada42">
     <img height="20" src="https://img.shields.io/github/followers/ktakada42?label=follow&logo=github&style=flat" />
 </p>
-### Hi there 👋
 
 Here are some ideas to get you started:
 
