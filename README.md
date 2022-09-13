@@ -27,3 +27,5 @@ Here are some ideas to get you started:
 </p>
   
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktakada42)](https://github.com/ktakada42/github-readme-stats)
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=ktakada42&theme=onedark)](https://github.com/ktakada42/github-profile-trophy)
