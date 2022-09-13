@@ -25,3 +25,5 @@ Here are some ideas to get you started:
   <a href="https://github.com/ktakada42">
     <img height="20" src="https://img.shields.io/github/followers/ktakada42?label=follow&logo=github&style=flat" />
 </p>
+  
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktakada42)](https://github.com/ktakada42/github-readme-stats)
