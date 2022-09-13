@@ -1,12 +1,3 @@
-### Hi there 👋
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently learning at [42 Tokyo](https://42tokyo.jp/)
-- 🌱 I’m currently learning Go
-- 📫 How to reach me: [@ktaka421306e03](https://twitter.com/ktaka421306e03)
-- 😄 Pronouns: he/him
-
 <p align="left">
   <a href="https://github.com/ktakada42/ktakada42/">
     <img src="https://komarev.com/ghpvc/?username=ktakada42" alt="ktakada42" />
@@ -17,7 +8,15 @@ Here are some ideas to get you started:
   <a href="https://github.com/ktakada42">
     <img height="20" src="https://img.shields.io/github/followers/ktakada42?label=follow&logo=github&style=flat" />
 </p>
-  
+### Hi there 👋
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently learning at [42 Tokyo](https://42tokyo.jp/)
+- 🌱 I’m currently learning Go
+- 📫 How to reach me: [@ktaka421306e03](https://twitter.com/ktaka421306e03)
+- 😄 Pronouns: he/him
+
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktakada42)](https://github.com/ktakada42/github-readme-stats)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=ktakada42&theme=onedark)](https://github.com/ktakada42/github-profile-trophy)
