@@ -33,4 +33,4 @@ Here are some ideas to get you started:
 
 📊 &nbsp;**This week I spent my time on**
 
-![Wwakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ktakada42&layuout=compact&theme=nord&v=2)
+![Wwakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ktakada42&layuout=compact&theme=prussian&v=2)
