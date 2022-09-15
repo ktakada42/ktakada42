@@ -8,8 +8,6 @@
     <img height="20" src="https://img.shields.io/github/followers/ktakada42?label=follow&logo=github&style=flat" /> </a>
 </p>
 
-Here are some ideas to get you started:
-
 - 🔭 I’m currently learning at [42 Tokyo](https://42tokyo.jp/)
 - 🌱 I’m currently learning Go
 - 📫 How to reach me: [@ktakada42](https://twitter.com/ktakada42)
