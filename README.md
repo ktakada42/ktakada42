@@ -9,9 +9,9 @@
 </p>
 
 - 🔭 I’m currently learning at [42 Tokyo](https://42tokyo.jp/)
-- 🌱 I’m currently learning Go
 - 📫 How to reach me: [@ktakada42](https://twitter.com/ktakada42)
 - 😄 Pronouns: he/him
+<!-- - 🌱 I’m currently learning Go -->
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktakada42&theme=prussian&show_icons=true)](https://github.com/ktakada42/github-readme-stats)
 
