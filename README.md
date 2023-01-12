@@ -13,7 +13,7 @@
 - 😄 Pronouns: he/him
 <!-- - 🌱 I’m currently learning Go -->
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ktakada42&theme=prussian&show_icons=true)](https://github.com/ktakada42/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=ktakada42&theme=prussian&show_icons=true)](https://github.com/ktakada42/github-readme-stats)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=ktakada42&theme=nord)](https://github.com/ktakada42/github-profile-trophy)
 
