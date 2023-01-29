@@ -46,7 +46,8 @@
   <summary>💻 GitHub Profile Stats</summary>
   <br/>
     <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ktakada42's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=ktakada42&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ktakada42's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
+    <br/>
+  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ktakada42's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445" /></a>
 
 <!-- https://github.com/anuraghazra/github-readme-stats -->
   <summary>🕛 Wakatime Week Stats</summary>
