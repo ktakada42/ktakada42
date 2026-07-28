@@ -34,14 +34,18 @@
 <img src="https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white"/>
 </p>
   
-<!-- ## 📘 Some of my projects
+<!--
+Repo info cards - https://github.com/stats-organization/github-stats-extended
+Keep this one comment well-formed: a nested "- - >" would close it early and
+leak the cards into the page. leetcode is private, so its card 404s until the
+repo is made public.
 
-<!-- Repo info cards - https://github.com/stats-organization/github-stats-extended -->
+## 📘 Some of my projects
+
 <p align="left">
   <a href="https://github.com/ktakada42/leetcode">
     <img width="240" src="https://github-stats-extended.vercel.app/api/pin/?username=ktakada42&repo=leetcode&theme=react&bg_color=0D1117&hide_border=true" alt="leetcode"></a>
 </p>
-
 -->
 
 ## 💻 GitHub Profile Stats
