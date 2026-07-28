@@ -36,26 +36,25 @@
   
 <!-- ## 📘 Some of my projects
 
-<!-- Repo info cards - https://github.com/anuraghazra/github-readme-stats-->
-<!-- Small repo cards (fork) - https://github.com/DenverCoder1/github-readme-stats->
+<!-- Repo info cards - https://github.com/stats-organization/github-stats-extended -->
 <p align="left">
   <a href="https://github.com/ktakada42/leetcode">
-    <img width="240" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=ktakada42&repo=leetcode&theme=react&bg_color=0D1117&hide_border=true" alt="leetcode"></a>
+    <img width="240" src="https://github-stats-extended.vercel.app/api/pin/?username=ktakada42&repo=leetcode&theme=react&bg_color=0D1117&hide_border=true" alt="leetcode"></a>
 </p>
 
 -->
 
 ## 💻 GitHub Profile Stats
 
-<!-- https://github.com/anuraghazra/github-readme-stats -->
+<!-- https://github.com/stats-organization/github-stats-extended -->
 <br/>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ktakada42's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=ktakada42&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a>
+  <a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Github Stats" src="https://github-stats-extended.vercel.app/api?username=ktakada42&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a>
   <br/>
-<a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ktakada42's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445" /></a>
+<a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445" /></a>
 
 ## 🕛 Wakatime Week Stats
 
-<!-- https://github.com/anuraghazra/github-readme-stats -->
+<!-- https://github.com/stats-organization/github-stats-extended -->
 <br/>
 
-[![WakaTime](https://denvercoder1-github-readme-stats.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117)](https://wakatime.com/@ktakada42)
+[![WakaTime](https://github-stats-extended.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117)](https://wakatime.com/@ktakada42)
