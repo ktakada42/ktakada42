@@ -1,0 +1,38 @@
+# The public streak-stats instance responds in 1-20s, well over the ~4s budget
+# of GitHub's image proxy (camo), so embedding its URL directly in the README
+# yields a 504 and a broken image. Instead, render the SVG here and commit it,
+# so the README can point at a file GitHub itself serves.
+name: Streak stats
+
+on:
+  schedule:
+    - cron: "17 21 * * *" # 06:17 JST daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render streak card
+        run: |
+          curl -fsS --max-time 60 --retry 5 --retry-all-errors --retry-delay 10 \
+            -o assets/streak-stats.svg \
+            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=60D9FA&fire=60D9FA&currStreakLabel=60D9FA"
+          # A truncated or error response would silently blank the card.
+          grep -q "Current Streak" assets/streak-stats.svg
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/streak-stats.svg; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update streak stats" -- assets/streak-stats.svg
+          git push

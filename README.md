@@ -13,9 +13,11 @@
 ## 🔥 Streak stats
 
 <!-- GitHub Readme Streak Stats - https://github.com/DenverCoder1/github-readme-streak-stats -->
+<!-- Rendered daily by .github/workflows/streak-stats.yml; the live endpoint is
+     too slow for GitHub's image proxy, so the SVG is committed to this repo. -->
 <p align="center">
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="DenverCoder1's streak" src="https://streak-stats.demolab.com/?user=ktakada42&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=60D9FA&fire=60D9FA&currStreakLabel=60D9FA"/>
+    <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="DenverCoder1's streak" src="https://raw.githubusercontent.com/ktakada42/ktakada42/main/assets/streak-stats.svg"/>
   </a>
 </p>
 
