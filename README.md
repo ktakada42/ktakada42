@@ -4,8 +4,10 @@
 
 <!-- Badges template - https://github.com/Ileriayo/markdown-badges -->
 <p align="center">
-  <a href="https://twitter.com/ktakada42">
-    <img alt="twitter" title="Twitter" src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"/></a>
+  <a href="https://x.com/ktakada42">
+    <img alt="X" title="X" src="https://img.shields.io/badge/X-%23FFFFFF.svg?style=for-the-badge&logo=X&logoColor=black"/></a>
+  <a href="https://www.linkedin.com/in/keisuke-takada-421306e03">
+    <img alt="LinkedIn" title="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
 
 ## 🔥 Streak stats
@@ -13,7 +15,7 @@
 <!-- GitHub Readme Streak Stats - https://github.com/DenverCoder1/github-readme-streak-stats -->
 <p align="center">
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="DenverCoder1's streak" src="https://github-readme-streak-stats.herokuapp.com/?user=ktakada42&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=60D9FA&fire=60D9FA&currStreakLabel=60D9FA"/>
+    <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="DenverCoder1's streak" src="https://streak-stats.demolab.com/?user=ktakada42&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=60D9FA&fire=60D9FA&currStreakLabel=60D9FA"/>
   </a>
 </p>
 
@@ -54,4 +56,4 @@
 <!-- https://github.com/anuraghazra/github-readme-stats -->
 <br/>
 
-[![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117)](https://wakatime.com/@ktakada42)
+[![WakaTime](https://denvercoder1-github-readme-stats.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117)](https://wakatime.com/@ktakada42)
