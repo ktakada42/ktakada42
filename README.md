@@ -31,13 +31,13 @@ repo is made public.
 
 <!-- https://github.com/stats-organization/github-stats-extended -->
 <br/>
-  <a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Github Stats" src="https://github-stats-extended.vercel.app/api?username=ktakada42&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" /></a>
+  <a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Github Stats" src="https://github-stats-extended.vercel.app/api?username=ktakada42&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&cache_bust=20260731" /></a>
   <br/>
-<a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445" /></a>
+<a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445&cache_bust=20260731" /></a>
 
 ## 🕛 Wakatime Week Stats
 
 <!-- https://github.com/stats-organization/github-stats-extended -->
 <br/>
 
-[![WakaTime](https://github-stats-extended.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117)](https://wakatime.com/@ktakada42)
+[![WakaTime](https://github-stats-extended.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117&cache_bust=20260731)](https://wakatime.com/@ktakada42)
