@@ -1,7 +1,6 @@
-# The public streak-stats instance responds in 1-20s, well over the ~4s budget
-# of GitHub's image proxy (camo), so embedding its URL directly in the README
-# yields a 504 and a broken image. Instead, render the SVG here and commit it,
-# so the README can point at a file GitHub itself serves.
+# The public stats endpoints can be slow or stale behind GitHub's image proxy
+# and external caches. Render the SVGs in Actions, commit them here, and let the
+# README point at files GitHub itself serves.
 name: Streak stats
 
 on:
@@ -18,6 +17,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate profile stats card
+        uses: stats-organization/github-readme-stats-action@v2.0.2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117
+          path: assets/github-stats.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2.0.2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445
+          path: assets/top-langs.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+
+      - name: Generate WakaTime card
+        uses: stats-organization/github-readme-stats-action@v2.0.2
+        with:
+          card: wakatime
+          options: username=${{ github.repository_owner }}&hide_border=true&theme=react&bg_color=0D1117
+          path: assets/wakatime.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+
       - name: Render streak card
         run: |
           curl -fsS --max-time 60 --retry 5 --retry-all-errors --retry-delay 10 \
@@ -26,47 +49,14 @@ jobs:
           # A truncated or error response would silently blank the card.
           grep -q "Current Streak" assets/streak-stats.svg
 
-      - name: Refresh README stats cache bust
-        run: |
-          python - <<'PY'
-          from datetime import datetime, timezone
-          from pathlib import Path
-          from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
-
-          readme_path = Path("README.md")
-          cache_bust = datetime.now(timezone.utc).strftime("%Y%m%d")
-          targets = {
-              "/api",
-              "/api/",
-              "/api/top-langs/",
-              "/api/wakatime",
-          }
-
-          def refresh(url: str) -> str:
-              parts = urlsplit(url)
-              if parts.netloc != "github-stats-extended.vercel.app" or parts.path not in targets:
-                  return url
-              query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != "cache_bust"]
-              query.append(("cache_bust", cache_bust))
-              return urlunsplit(parts._replace(query=urlencode(query)))
-
-          original = readme_path.read_text()
-          updated = original
-          for url in set(part for part in original.split('"') if "github-stats-extended.vercel.app" in part):
-              updated = updated.replace(url, refresh(url))
-
-          if updated != original:
-              readme_path.write_text(updated)
-          PY
-
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/streak-stats.svg README.md
+          git add README.md assets/*.svg
           if git diff --cached --quiet; then
             echo "No change."
             exit 0
           fi
-          git commit -m "chore: update streak stats and refresh README cache bust"
+          git commit -m "chore: update profile stats assets"
           git push
