@@ -26,13 +26,47 @@ jobs:
           # A truncated or error response would silently blank the card.
           grep -q "Current Streak" assets/streak-stats.svg
 
+      - name: Refresh README stats cache bust
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+
+          readme_path = Path("README.md")
+          cache_bust = datetime.now(timezone.utc).strftime("%Y%m%d")
+          targets = {
+              "/api",
+              "/api/",
+              "/api/top-langs/",
+              "/api/wakatime",
+          }
+
+          def refresh(url: str) -> str:
+              parts = urlsplit(url)
+              if parts.netloc != "github-stats-extended.vercel.app" or parts.path not in targets:
+                  return url
+              query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != "cache_bust"]
+              query.append(("cache_bust", cache_bust))
+              return urlunsplit(parts._replace(query=urlencode(query)))
+
+          original = readme_path.read_text()
+          updated = original
+          for url in set(part for part in original.split('"') if "github-stats-extended.vercel.app" in part):
+              updated = updated.replace(url, refresh(url))
+
+          if updated != original:
+              readme_path.write_text(updated)
+          PY
+
       - name: Commit if changed
         run: |
-          if git diff --quiet -- assets/streak-stats.svg; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/streak-stats.svg README.md
+          if git diff --cached --quiet; then
             echo "No change."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: update streak stats" -- assets/streak-stats.svg
+          git commit -m "chore: update streak stats and refresh README cache bust"
           git push
