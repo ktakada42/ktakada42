@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+world!&center=true&width=380&height=45">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+world!&center=true&width=420&height=55&size=28">
 </p>
 
 ## 🔥 Streak stats
