@@ -29,15 +29,17 @@ repo is made public.
 
 ## 💻 GitHub Profile Stats
 
-<!-- https://github.com/stats-organization/github-stats-extended -->
+<!-- Rendered daily by .github/workflows/streak-stats.yml via
+     https://github.com/stats-organization/github-readme-stats-action -->
 <br/>
-  <a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Github Stats" src="https://github-stats-extended.vercel.app/api?username=ktakada42&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&cache_bust=20260731" /></a>
+  <a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Github Stats" src="https://raw.githubusercontent.com/ktakada42/ktakada42/main/assets/github-stats.svg" /></a>
   <br/>
-<a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ktakada42&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=0D1117&card_width=445&cache_bust=20260731" /></a>
+<a href="https://github.com/stats-organization/github-stats-extended"><img alt="ktakada42's Top Languages" src="https://raw.githubusercontent.com/ktakada42/ktakada42/main/assets/top-langs.svg" /></a>
 
 ## 🕛 Wakatime Week Stats
 
-<!-- https://github.com/stats-organization/github-stats-extended -->
+<!-- Rendered daily by .github/workflows/streak-stats.yml via
+     https://github.com/stats-organization/github-readme-stats-action -->
 <br/>
 
-[![WakaTime](https://github-stats-extended.vercel.app/api/wakatime?username=ktakada42&hide_border=true&theme=react&bg_color=0D1117&cache_bust=20260731)](https://wakatime.com/@ktakada42)
+[![WakaTime](https://raw.githubusercontent.com/ktakada42/ktakada42/main/assets/wakatime.svg)](https://wakatime.com/@ktakada42)
