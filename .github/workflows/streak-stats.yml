@@ -41,13 +41,12 @@ jobs:
           path: assets/wakatime.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
 
-      - name: Render streak card
-        run: |
-          curl -fsS --max-time 60 --retry 5 --retry-all-errors --retry-delay 10 \
-            -o assets/streak-stats.svg \
-            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=60D9FA&fire=60D9FA&currStreakLabel=60D9FA"
-          # A truncated or error response would silently blank the card.
-          grep -q "Current Streak" assets/streak-stats.svg
+      - name: Generate streak card
+        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
+        with:
+          options: user=${{ github.repository_owner }}&theme=black-ice&hide_border=true&stroke=0000&background=0D1117&ring=60D9FA&fire=60D9FA&currStreakLabel=60D9FA
+          path: assets/streak-stats.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
 
       - name: Commit if changed
         run: |
